@@ -1,0 +1,6 @@
+@Avenga.API_HostAddress = http://localhost:5119
+
+GET {{Avenga.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

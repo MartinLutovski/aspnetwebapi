@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avenga.API", "Avenga.API\Avenga.API.csproj", "{BA6BCED0-E761-4DDE-BB7B-88067341AC09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA6BCED0-E761-4DDE-BB7B-88067341AC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6BCED0-E761-4DDE-BB7B-88067341AC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6BCED0-E761-4DDE-BB7B-88067341AC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6BCED0-E761-4DDE-BB7B-88067341AC09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81139C37-1F1E-4DC0-A1F2-5B514C0ED8E2}
+	EndGlobalSection
+EndGlobal
