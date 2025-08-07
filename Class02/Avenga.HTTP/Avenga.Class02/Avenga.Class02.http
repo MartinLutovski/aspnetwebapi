@@ -1,0 +1,6 @@
+@Avenga.Class02_HostAddress = http://localhost:5256
+
+GET {{Avenga.Class02_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
