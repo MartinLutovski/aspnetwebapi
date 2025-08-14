@@ -11,26 +11,26 @@ namespace Avenga.NotesAndTagsApp
             new User()
             {
                 Id = 1,
-                FirstName = "Filip",
-                LastName = "Filiposki",
-                Username = "ffiliposki",
-                Password = "1234567890"
+                FirstName = "Dino",
+                LastName = "Nikolovski",
+                Username = "Dnikolovski",
+                Password = "Password"
             },
             new User()
             {
                 Id = 2,
-                FirstName = "Bob",
-                LastName = "Bobski",
-                Username = "bboski",
-                Password = "0987654321"
+                FirstName = "Todor",
+                LastName = "Pelivanov",
+                Username = "Tpelivanov",
+                Password = "123"
             }
         };
 
         public static List<Tag> Tags = new List<Tag>()
         {
             new Tag() { Id = 1, Name="Homework", Color = "cyan"},
-            new Tag() { Id = 2, Name="Avenga", Color = "red"},
-            new Tag() { Id = 3, Name="Healthy", Color = "green"},
+            new Tag() { Id = 2, Name="Avenga", Color = "blue"},
+            new Tag() { Id = 3, Name="Healthy", Color = "orange"},
             new Tag() { Id = 4, Name="Water", Color = "blue"},
             new Tag() { Id = 5, Name="Exercise", Color = "grey"},
             new Tag() { Id = 6, Name="Fit", Color = "yellow"}

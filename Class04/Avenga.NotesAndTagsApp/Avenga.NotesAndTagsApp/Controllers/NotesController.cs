@@ -67,7 +67,7 @@ namespace Avenga.NotesAndTagsApp.Controllers
             }
         }
 
-        [HttpGet("findById")]
+        [HttpGet("findById")] 
         public ActionResult<NoteDto> FindById(int id)
         {
             try
@@ -106,11 +106,11 @@ namespace Avenga.NotesAndTagsApp.Controllers
             {
                 if (string.IsNullOrEmpty(addNoteDto.Text))
                 {
-                    return BadRequest("Text os required field!");
+                    return BadRequest("Text is required field!");
                 }
 
                 User userDb = StaticDb.Users.SingleOrDefault(x=>x.Id == addNoteDto.UserId);
-
+             
                 if(userDb == null)
                 {
                     return NotFound($"User with id {addNoteDto.UserId} was not found");
@@ -216,7 +216,9 @@ namespace Avenga.NotesAndTagsApp.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-
+            
+            
+            
         }
     }
 }
