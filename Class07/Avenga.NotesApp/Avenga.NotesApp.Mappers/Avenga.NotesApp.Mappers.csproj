@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Avenga.NotesApp.Domain\Avenga.NotesApp.Domain.csproj" />
+    <ProjectReference Include="..\Avenga.NotesApp.Dtos\Avenga.NotesApp.Dtos.csproj" />
+  </ItemGroup>
+
 </Project>
