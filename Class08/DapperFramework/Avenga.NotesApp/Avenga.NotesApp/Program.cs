@@ -18,7 +18,16 @@ AppSettings appSettingsObject =  appSettings.Get<AppSettings>();
 //Dependency Injection
 DependencyInjectionHelper.InjectDbContext(builder.Services, appSettingsObject.ConnectionString); // This and the above is called
 // option settings pattern, we can use multiple Db if needed
+// this is Entity Framework DbContext
+// with Entity Framework we can create a code first approach, so the db and tables will be created by the framework
 DependencyInjectionHelper.InjectRepositories(builder.Services);
+
+//DependencyInjectionHelper.InjectDapperRepositories(builder.Services, "Server=.;Database=NotesAppDatabase;Trusted_Connection=True;TrustServerCertificate=True");
+// the above method is a bad EXAMPLE, never use it, always use the appsettings.json or environment variables
+// Inject Dapper Repositories
+// with Dapper we cant create a code first approach, we need to have the db and tables created first
+DependencyInjectionHelper.InjectAdoRepositories(builder.Services, appSettingsObject.ConnectionString);
+// Inject Ado Repositories
 DependencyInjectionHelper.InjectServices(builder.Services);
 
 

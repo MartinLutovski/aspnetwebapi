@@ -1,4 +1,6 @@
 ﻿using Avenga.NotesApp.DataAccess;
+using Avenga.NotesApp.DataAccess.AdoImplementations;
+using Avenga.NotesApp.DataAccess.DapperImplementations;
 using Avenga.NotesApp.DataAccess.Implementations;
 using Avenga.NotesApp.Domain.Models;
 using Avenga.NotesApp.Services.Implementations;
@@ -25,6 +27,15 @@ namespace Avenga.NotesApp.Helpers
         public static void InjectServices(IServiceCollection services)
         {
             services.AddTransient<INoteService, NoteService>();
+        }
+
+        public static void InjectDapperRepositories(IServiceCollection services, string connectionString)
+        {
+            services.AddTransient<IRepository<Note>>(x => new NoteDapperRepository(connectionString));
+        }
+        public static void InjectAdoRepositories(IServiceCollection services, string connectionString)
+        {
+            services.AddTransient<IRepository<Note>>(x => new NoteAdoRepository(connectionString));
         }
     }
 }
