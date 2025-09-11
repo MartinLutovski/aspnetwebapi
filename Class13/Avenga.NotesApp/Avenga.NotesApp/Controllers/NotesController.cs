@@ -2,6 +2,7 @@
 using Avenga.NotesApp.Services.Interfaces;
 using Avenga.NotesApp.Shared.CustomExceptions;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace Avenga.NotesApp.Controllers
 {
@@ -35,14 +36,17 @@ namespace Avenga.NotesApp.Controllers
             try
             {
                 var noteDto = _noteService.GetById(id); //potential NoteNotFounException
+                Log.Information($"Retrieved note: {noteDto.Text}");
                 return Ok(noteDto); // status code => 200
             }
             catch (NoteNotFoundException ex)
             {
+                Log.Warning($"The requested note was not found! {ex.Message}");
                 return NotFound(ex.Message); // status code => 404
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Log.Error($"Internal Exception: {ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred, contact the Admin!");
             }
         }

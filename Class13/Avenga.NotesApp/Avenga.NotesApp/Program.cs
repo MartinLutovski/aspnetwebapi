@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,11 @@ builder.Services.AddSwaggerGen(c =>
     });
     c.OperationFilter<SecurityRequirementsOperationFilter>();
 });
+
+// adding serilog to our app
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("logs.txt"));
+//builder.Host.UseSerilog();
+
 
 //read from appSettings.Json, find the property AppSettings from the main Object
 var appSettings = builder.Configuration.GetSection("AppSettings");
