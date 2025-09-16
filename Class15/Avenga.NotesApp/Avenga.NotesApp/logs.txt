@@ -950,3 +950,53 @@ WHERE LOWER([u].[Username]) = @__ToLower_0 AND [u].[Password] = @__hashedPasswor
 2025-09-12 20:51:25.665 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5280/api/users/login/addNote - application/json 58
 2025-09-12 20:51:25.713 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5280/api/users/login/addNote - 404 0 null 47.5062ms
 2025-09-12 20:51:25.713 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5280/api/users/login/addNote, Response status code: 404
+2025-09-16 17:39:22.727 +02:00 [INF] User profile is available. Using 'C:\Users\marti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-16 17:39:23.004 +02:00 [INF] Now listening on: https://localhost:7095
+2025-09-16 17:39:23.004 +02:00 [INF] Now listening on: http://localhost:5280
+2025-09-16 17:39:23.074 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 17:39:23.074 +02:00 [INF] Hosting environment: Development
+2025-09-16 17:39:23.074 +02:00 [INF] Content root path: C:\myRepos\aspnetwebapi\Class15\Avenga.NotesApp\Avenga.NotesApp
+2025-09-16 17:39:23.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger - null null
+2025-09-16 17:39:23.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger - 301 0 null 145.3517ms
+2025-09-16 17:39:23.642 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2025-09-16 17:39:23.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 238.0247ms
+2025-09-16 17:39:23.907 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - null null
+2025-09-16 17:39:23.907 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-16 17:39:23.907 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-16 17:39:23.907 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - null null
+2025-09-16 17:39:23.907 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2025-09-16 17:39:23.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 21.8556ms
+2025-09-16 17:39:23.988 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-16 17:39:23.989 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 82.7408ms
+2025-09-16 17:39:23.993 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-16 17:39:23.994 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - 200 152034 text/css 87.3705ms
+2025-09-16 17:39:24.015 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-16 17:39:24.016 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 109.0704ms
+2025-09-16 17:39:24.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 175.2911ms
+2025-09-16 17:39:24.199 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2025-09-16 17:39:24.214 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - null null
+2025-09-16 17:39:24.214 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-16 17:39:24.214 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - 200 628 image/png 0.3699ms
+2025-09-16 17:39:24.224 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.8623ms
+2025-09-16 17:39:40.342 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/register.html - null null
+2025-09-16 17:39:40.431 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/register.html - 404 0 null 88.8125ms
+2025-09-16 17:39:40.433 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/swagger/register.html, Response status code: 404
+2025-09-16 17:42:47.842 +02:00 [INF] User profile is available. Using 'C:\Users\marti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-16 17:42:48.026 +02:00 [INF] Now listening on: http://localhost:5280
+2025-09-16 17:42:48.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 17:42:48.124 +02:00 [INF] Hosting environment: Development
+2025-09-16 17:42:48.124 +02:00 [INF] Content root path: C:\myRepos\aspnetwebapi\Class15\Avenga.NotesApp\Avenga.NotesApp
+2025-09-16 17:42:48.295 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/register.html - null null
+2025-09-16 17:42:48.457 +02:00 [INF] Sending file. Request path: '/register.html'. Physical path: 'C:\myRepos\aspnetwebapi\Class15\Avenga.NotesApp\Avenga.NotesApp\wwwroot\register.html'
+2025-09-16 17:42:48.460 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/register.html - 200 null text/html 175.3416ms
+2025-09-16 17:42:48.473 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-16 17:42:48.473 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/register.js - null null
+2025-09-16 17:42:48.473 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/_vs/browserLink - null null
+2025-09-16 17:42:48.475 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 2.7314ms
+2025-09-16 17:42:48.487 +02:00 [INF] Sending file. Request path: '/register.js'. Physical path: 'C:\myRepos\aspnetwebapi\Class15\Avenga.NotesApp\Avenga.NotesApp\wwwroot\register.js'
+2025-09-16 17:42:48.490 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/register.js - 200 1055 text/javascript 17.4975ms
+2025-09-16 17:42:48.508 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.2383ms
+2025-09-16 17:42:48.523 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5280/favicon.ico - null null
+2025-09-16 17:42:48.527 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 17:42:48.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5280/favicon.ico - 404 0 null 64.0959ms
+2025-09-16 17:42:48.589 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5280/favicon.ico, Response status code: 404
